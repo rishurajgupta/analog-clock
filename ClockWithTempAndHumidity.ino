@@ -228,6 +228,11 @@ void loop(void) {
   tft.print(DHT.humidity);
   tft.print("%");
   
+  tft.fillRect(xpos-40, 182,23,15,BLACK);
+  tft.setCursor(xpos-40, 182);
+  tft.print(DHT.temperature);
+  tft.print("%");
+  
   }
 }
 
